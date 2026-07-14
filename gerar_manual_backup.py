@@ -60,7 +60,7 @@ ok_texto     = estilo("ok",  fontSize=10, textColor=colors.HexColor("#166534"), 
 story = []
 
 # ── CAPA ──
-capa = Table([[Paragraph("SigmaPDV", titulo_capa)]], colWidths=[W - 4.4*cm])
+capa = Table([[Paragraph("PDV", titulo_capa)]], colWidths=[W - 4.4*cm])
 capa.setStyle(TableStyle([
     ("BACKGROUND",    (0,0), (-1,-1), AZUL_ESC),
     ("TOPPADDING",    (0,0), (-1,-1), 32),
@@ -80,7 +80,7 @@ story.append(Spacer(1, 22))
 # ── INTRODUÇÃO ──
 story.append(Paragraph("Por que fazer backup?", secao))
 story.append(Paragraph(
-    "Todos os dados do SigmaPDV — vendas, produtos, estoque, clientes — ficam salvos num arquivo "
+    "Todos os dados do PDV — vendas, produtos, estoque, clientes — ficam salvos num arquivo "
     "chamado <b>sistema.db</b> dentro da pasta do sistema no seu computador.",
     corpo))
 story.append(Paragraph(
@@ -124,22 +124,22 @@ passos_config = [
      "Após instalar, uma pasta do Google Drive aparecerá automaticamente no seu computador "
      "(geralmente em <b>C:\\Users\\SeuNome\\Google Drive</b>)."),
     ("2", "Crie uma pasta para os backups",
-     "Dentro da pasta do Google Drive, crie uma nova pasta chamada <b>Backups SigmaPDV</b>. "
+     "Dentro da pasta do Google Drive, crie uma nova pasta chamada <b>Backups PDV</b>. "
      "Tudo que for salvo aqui ficará automaticamente na nuvem."),
-    ("3", "Abra as Configurações do SigmaPDV",
+    ("3", "Abra as Configurações do PDV",
      "No menu lateral, clique em <b>Configurações</b> (ícone de engrenagem no rodapé do menu). "
      "Você precisa estar logado como <b>administrador</b>."),
     ("4", "Cole o caminho da pasta",
      "Na seção <b>Backup Automático</b>, cole o caminho completo da pasta criada. Exemplo:<br/>"
-     "<b>C:\\Users\\João\\Google Drive\\Backups SigmaPDV</b><br/>"
+     "<b>C:\\Users\\João\\Google Drive\\Backups PDV</b><br/>"
      "Para copiar o caminho: abra a pasta no Explorador de Arquivos, clique na barra de endereço "
      "no topo e copie o texto que aparecer."),
     ("5", "Clique em Salvar pasta",
-     "Pronto! A partir de agora, toda vez que o SigmaPDV for iniciado ele fará o backup "
+     "Pronto! A partir de agora, toda vez que o SPDV for iniciado ele fará o backup "
      "automaticamente. Os últimos <b>30 backups</b> são mantidos — os mais antigos são apagados sozinhos."),
 ]
 
-for num, titulo, desc in passos_config:
+for num, titulo, desc in passos_config
     t = Table([[
         Paragraph(num, passo_num_st),
         [Paragraph(titulo, passo_titulo), Paragraph(desc, corpo)]
