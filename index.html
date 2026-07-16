@@ -164,51 +164,6 @@
     .diff-item h4 { font-size: 14px; font-weight: 700; color: #e2e8f0; margin-bottom: 4px; }
     .diff-item p { font-size: 13px; color: #94a3b8; line-height: 1.5; }
 
-    /* ── CONTATO ── */
-    .contact { background: var(--light); }
-    .contact-wrap {
-      max-width: 580px; margin: 48px auto 0;
-      background: #fff; border: 1px solid #e2e8f0;
-      border-radius: 14px; padding: 36px 40px;
-    }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .form-group { margin-bottom: 16px; }
-    .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--dark2); margin-bottom: 6px; }
-    .form-group input, .form-group select, .form-group textarea {
-      width: 100%; padding: 10px 13px;
-      border: 1px solid #d1d5db; border-radius: 8px;
-      font-size: 14px; color: var(--dark);
-      background: #fff; font-family: inherit;
-      transition: border-color 0.15s, box-shadow 0.15s;
-    }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-      outline: none; border-color: var(--blue);
-      box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
-    }
-    .form-group textarea { resize: vertical; min-height: 110px; }
-    .btn-submit {
-      width: 100%; padding: 13px;
-      background: var(--blue); color: #fff;
-      border: none; border-radius: 8px;
-      font-size: 15px; font-weight: 700; cursor: pointer;
-      transition: background 0.2s, transform 0.15s;
-      font-family: inherit;
-    }
-    .btn-submit:hover { background: var(--blue-d); transform: translateY(-1px); }
-    .contact-email {
-      text-align: center; margin-top: 18px;
-      font-size: 13px; color: var(--gray);
-    }
-    .contact-email a { color: var(--blue); text-decoration: none; font-weight: 600; }
-    .contact-email a:hover { text-decoration: underline; }
-    #msg-success {
-      display: none;
-      background: #dcfce7; border: 1px solid #86efac;
-      border-radius: 8px; padding: 14px 18px;
-      color: #166534; font-size: 14px; text-align: center;
-      margin-top: 14px;
-    }
-
     /* ── FOOTER ── */
     footer {
       background: var(--dark);
@@ -220,8 +175,6 @@
     footer strong { color: #94a3b8; }
 
     @media (max-width: 560px) {
-      .form-row { grid-template-columns: 1fr; }
-      .contact-wrap { padding: 28px 22px; }
       .stats { gap: 30px; }
     }
   </style>
@@ -234,7 +187,7 @@
     <div class="icon">🛒</div>
     <span>Kronax-PDV <small>Sistema de Vendas</small></span>
   </a>
-  <a class="nav-cta" href="https://www.pay.hotmart.com/F106695110S">Adquirir Sistema</a>
+  <a class="nav-cta" href="https://pay.hotmart.com/F106695110S">Adquirir Sistema</a>
 </nav>
 
 <!-- HERO -->
@@ -243,7 +196,7 @@
   <h1>O PDV que <span>simplifica</span><br>a sua operação</h1>
   <p>Controle vendas, estoque, clientes e relatórios em um sistema leve, rápido e fácil de usar — sem mensalidade de internet.</p>
   <div class="hero-btns">
-    <a href="https://www.pay.hotmart.com/F106695110S" class="btn-hero-primary">Quero adquirir →</a>
+    <a href="https://pay.hotmart.com/F106695110S" class="btn-hero-primary">Quero adquirir →</a>
     <a href="#funcionalidades" class="btn-hero-ghost">Ver funcionalidades</a>
   </div>
 </section>
@@ -316,8 +269,8 @@
   <div class="steps">
     <div class="step">
       <div class="step-num">1</div>
-      <h3>Entre em contato</h3>
-      <p>Preencha o formulário ou envie um e-mail.</p>
+      <h3>Adquira o sistema</h3>
+      <p>Clique em comprar e finalize o pagamento pelo checkout seguro.</p>
     </div>
     <div class="step">
       <div class="step-num">2</div>
@@ -413,15 +366,8 @@
 <footer>
   <p><strong>KronaX PDV</strong> — Sistema de Ponto de Venda para Pequenos Negócios</p>
   <p style="margin-top:8px;">© 2026 KronaX PDV. Todos os direitos reservados.</p>
+  <p style="margin-top:8px;">josiellitavares2021@gmail.com</p>
 </footer>
-
-<script>
-  function mostrarSucesso() {
-    setTimeout(() => {
-      document.getElementById('msg-success').style.display = 'block';
-    }, 300);
-  }
-</script>
 
 </body>
 </html>
