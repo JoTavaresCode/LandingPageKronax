@@ -16,6 +16,8 @@
       --light:   #f1f5f9;
       --white:   #ffffff;
       --green:   #16a34a;
+      --orange:  #b4481c;
+      --blue-logo: #1e40af;
       --radius:  10px;
     }
 
@@ -36,6 +38,10 @@
     .nav-logo .icon { width: 36px; height: 36px; background: var(--blue); border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
     .nav-logo span { font-size: 17px; font-weight: 700; color: var(--dark); }
     .nav-logo small { font-size: 11px; color: var(--gray); font-weight: 400; margin-left: 2px; }
+    .brand-kronax { color: var(--blue-logo); }
+    .brand-suffix { color: var(--orange); }
+    .nav-logo span.brand-kronax { color: var(--blue-logo); }
+    .nav-logo span.brand-suffix { color: var(--orange); }
     nav a.nav-cta {
       background: var(--blue); color: #fff;
       padding: 9px 20px; border-radius: 8px;
@@ -164,6 +170,31 @@
     .diff-item h4 { font-size: 14px; font-weight: 700; color: #e2e8f0; margin-bottom: 4px; }
     .diff-item p { font-size: 13px; color: #94a3b8; line-height: 1.5; }
 
+    /* ── OUTROS PRODUTOS ── */
+    .other-products { background: var(--light); border-top: 1px solid #e2e8f0; padding: 60px 5%; }
+    .op-card {
+      max-width: 640px; margin: 0 auto;
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 16px;
+      padding: 32px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+    }
+    .op-icon {
+      width: 56px; height: 56px; border-radius: 14px; flex-shrink: 0;
+      background: linear-gradient(135deg, #5b7cfa 0%, #3a56e0 100%);
+      color: #fff; font-size: 26px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .op-info { flex: 1; min-width: 200px; }
+    .op-brand { font-size: 19px; font-weight: 800; color: var(--blue-logo); }
+    .op-brand span { color: var(--orange); }
+    .op-tag { font-size: 10px; font-weight: 700; color: var(--gray); letter-spacing: 0.08em; margin-top: 2px; }
+    .op-desc { font-size: 13.5px; color: var(--gray); line-height: 1.5; margin-top: 8px; }
+    .op-btn {
+      background: var(--light); color: var(--gray);
+      border: 1px solid #e2e8f0; padding: 10px 20px; border-radius: 8px;
+      font-size: 13px; font-weight: 700; text-decoration: none;
+      flex-shrink: 0; white-space: nowrap;
+    }
+
     /* ── FOOTER ── */
     footer {
       background: var(--dark);
@@ -185,7 +216,7 @@
 <nav>
   <a class="nav-logo" href="#">
     <div class="icon">🛒</div>
-    <span>Kronax-PDV <small>Sistema de Vendas</small></span>
+    <span><span class="brand-kronax">Kronax</span><span class="brand-suffix">PDV</span> <small>Sistema de Vendas</small></span>
   </a>
   <a class="nav-cta" href="https://pay.hotmart.com/F106695110S">Adquirir Sistema</a>
 </nav>
@@ -194,7 +225,7 @@
 <section class="hero">
   <div class="hero-badge">✦ Sistema profissional para pequenos negócios</div>
   <h1>O PDV que <span>simplifica</span><br>a sua operação</h1>
-  <p>Controle vendas, estoque, clientes e relatórios em um sistema leve, rápido e fácil de usar — sem mensalidade de internet.</p>
+  <p>Controle vendas, estoque, clientes e relatórios em um sistema leve, rápido e fácil de usar — com uma mensalidade que cabe no seu bolso.</p>
   <div class="hero-btns">
     <a href="https://pay.hotmart.com/F106695110S" class="btn-hero-primary">Quero adquirir →</a>
     <a href="#funcionalidades" class="btn-hero-ghost">Ver funcionalidades</a>
@@ -205,7 +236,7 @@
 <div class="stats">
   <div class="stat"><strong>100%</strong><span>Offline — funciona sem internet</span></div>
   <div class="stat"><strong>Multi-caixa</strong><span>Vários computadores na mesma rede</span></div>
-  <div class="stat"><strong>Licença</strong><span>Pagamento único, sem mensalidade. Por tempo Limitado!</span></div>
+  <div class="stat"><strong>R$ 37,90/mês</strong><span>Mensalidade que cabe no seu bolso</span></div>
 </div>
 
 <!-- FUNCIONALIDADES -->
@@ -213,13 +244,13 @@
   <div class="center">
     <div class="section-label">Funcionalidades</div>
     <div class="section-title">Tudo que seu negócio precisa</div>
-    <div class="section-sub">Do caixa ao estoque, do cadastro ao relatório — tudo em uma só tela.</div>
+    <div class="section-sub">Do caixa ao estoque, do cadastro ao relatório — tudo em um só software.</div>
   </div>
   <div class="features-grid">
     <div class="feat-card">
       <div class="feat-icon">🛒</div>
       <h3>PDV Ágil</h3>
-      <p>Registre vendas rapidamente com busca de produtos por nome ou código. Aceita dinheiro, PIX, crédito e débito.</p>
+      <p>Registre vendas rapidamente com busca de produtos por nome ou código. Aceita dinheiro, PIX, crédito e débito com maquininha.</p>
     </div>
     <div class="feat-card">
       <div class="feat-icon">📦</div>
@@ -314,7 +345,7 @@
   <div class="center">
     <div class="section-label" style="color:#93c5fd;">Por que o KronaX PDV?</div>
     <div class="section-title">Simples, seguro e seu</div>
-    <div class="section-sub">Sem dependência de internet, sem assinatura mensal, sem surpresas.</div>
+    <div class="section-sub">Sem dependência de internet, com uma mensalidade que cabe no seu bolso, sem surpresas.</div>
   </div>
   <div class="diff-grid">
     <div class="diff-item">
@@ -327,8 +358,8 @@
     <div class="diff-item">
       <div class="check">✓</div>
       <div>
-        <h4>Promoção de Licença permanente</h4>
-        <p>Pague uma vez e use para sempre somente para quem adquirir até dia 20/08/2026. Sem mensalidade, sem surpresa no bolso.</p>
+        <h4>Cancele quando quiser</h4>
+        <p>Sem fidelidade e sem multa. Mensalidade de R$ 37,90 direto no seu bolso, sem contrato de permanência.</p>
       </div>
     </div>
     <div class="diff-item">
@@ -362,9 +393,26 @@
   </div>
 </section>
 
+<!-- OUTROS PRODUTOS -->
+<section class="other-products">
+  <div class="center" style="margin-bottom:36px;">
+    <div class="section-label">Conheça também</div>
+    <div class="section-title" style="font-size:22px;">Outro sistema do Grupo Nexial</div>
+  </div>
+  <div class="op-card">
+    <div class="op-icon">K</div>
+    <div class="op-info">
+      <div class="op-brand">Kronax<span>Menu</span></div>
+      <div class="op-tag">GRUPO NEXIAL</div>
+      <p class="op-desc">PDV completo para restaurantes — comandas, mesas e cozinha em um só sistema.</p>
+    </div>
+    <a href="https://restaurantepdv-kronaxmenusite.vercel.app" class="op-btn" target="_blank" rel="noopener">Conhecer →</a>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
-  <p><strong>KronaX PDV</strong> — Sistema de Ponto de Venda para Pequenos Negócios</p>
+  <p><strong><span class="brand-kronax">Kronax</span><span class="brand-suffix">PDV</span></strong> — Sistema de Ponto de Venda para Pequenos Negócios</p>
   <p style="margin-top:8px;">© 2026 KronaX PDV. Todos os direitos reservados.</p>
   <p style="margin-top:8px;">josiellitavares2021@gmail.com</p>
 </footer>
